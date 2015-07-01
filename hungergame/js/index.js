@@ -14,11 +14,13 @@ while (charAge < 12 || charAge > 18) {
 var charAge = prompt ("Oh no, " + charName + ", you are too young or old for this game to work. Please enter an age between 12 and 18.");
 }
 
-// var charGender = prompt ("Great! Now can you tell me if you are a boy, or a girl?").toUpperCase();
-// while (choice !== 'BOY') || (charGender !== 'GIRL') {
-// 	var charGender = prompt ("Uh oh, it seems like I couldn't figure out your gender. Can you answer with either boy or girl?").toUpperCase();
-// 	alert (charGender);
-// }
+ var charGender = prompt ("Great! Now can you tell me if you are a boy, or a girl?").toUpperCase();
+ while (charGender != "BOY" && charGender != "GIRL"){ 
+ //firstly you were using the wrong variable, next its just changed to ensuring that the condition only DOESNT work when the answer is NOT BOY and NOT GIRL, 
+ //which means if i type girl, it will say NO for NOT GIRL and boot me out of the loop
+ 	var charGender = prompt ("Uh oh, it seems like I couldn't figure out your gender. Can you answer with either boy or girl?").toUpperCase();
+ 	alert (charGender);
+ }
 
 
 while (choice != "continue"){
